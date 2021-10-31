@@ -1,0 +1,111 @@
+@import url('./variable.css');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Lato, sans-serif;
+   height: 110vh;
+}
+
+#header {
+   background-color: var(--black);
+   color: var(--white);
+   width: 100%;
+   display: flex;
+   padding: 0 3rem;
+   box-sizing: border-box;
+}
+
+#header .logo {
+   text-transform: uppercase;
+   flex-grow: 1;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   letter-spacing: 2px;
+   font-weight: bold;
+   font-size: 1.5rem;
+   cursor: pointer;
+   /* background-color: blueviolet; */
+}
+
+#header .logo a {
+   text-decoration: none;
+   color: var(--white);
+}
+
+nav {
+   flex-grow: 3;
+   /* background-color: crimson; */
+}
+
+nav ul {
+   list-style: none;
+   margin: 0 0 0 2rem;
+   padding: 0;
+   display: flex;
+   justify-content: flex-start;
+}
+
+nav ul li {
+   margin: 0 .5rem;
+   box-sizing: border-box;
+   cursor: pointer;
+}
+
+
+nav ul li a {
+   text-decoration: none;
+   font-size: 1.2rem;
+   color: var(--white);
+   display: block;
+   padding: 1.5rem;
+   position: relative;
+}
+
+nav ul li a:hover {
+   opacity: .8;
+}
+
+/* Nav items hover effect */
+nav ul li a::after {
+   content: "";
+   background-color: var(--white);
+   height: 1px;
+   width: 0;
+   position: absolute;
+   bottom: 10px;
+   left: 0;
+   transition-duration: .3s;
+}
+
+nav ul li a:hover::after {
+   width: 100%;
+}
+
+.contact {
+   flex-grow: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* background-color: aqua; */
+}
+
+.contact .contact-btn  {
+   display: block;
+   text-decoration: none;
+   color: var(--white);
+   background-image: linear-gradient(to right, var(--blue) 0%, var(--purple) 100%);
+   transition-duration: .4s;
+   padding: .6rem 1.5rem;
+   border-radius: 50px;
+}
+
+.contact-btn:hover {
+   opacity: .8;
+   background-image: linear-gradient(to right, var(--purple) 0%, var(--blue) 100%);
+}
+
+.contact span {
+   margin: 0 0 0 .3rem;
+}
