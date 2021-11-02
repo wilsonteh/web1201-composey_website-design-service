@@ -182,7 +182,7 @@ nav ul li a:hover::after {
 }
 
 /* ======== MAIN CONTENT ======== */
-/** ABOUT US */
+/** ===== ABOUT US SECTION =====  */
 #container {
    width: 70%;
    min-width: 800px;
@@ -193,7 +193,7 @@ nav ul li a:hover::after {
 .about-us {
    display: flex;
    height: 50vh;
-   margin: 2rem 0;
+   margin: 4rem 0;
    position: relative;
 }
 
@@ -238,4 +238,76 @@ nav ul li a:hover::after {
    text-align: center;
    padding: 0 0 0 2rem;
 }
+
+
+/** ===== PORTFOLIO SECTION =====  */
+.portfolio {
+   height: 50vh;
+   display: flex;
+   margin: 2rem 0;
+   /* background-color: coral; */
+}
+
+.portfolio .text-wrapper {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.2rem;
+   line-height: 2.2rem;
+   letter-spacing: 1.1px;
+   padding: 0 2rem;
+   text-align: center;
+   /* background-color: aqua; */
+}
+
+.portfolio .title {
+   font-size: 3.5rem;
+   margin: 2rem 0;
+}
+
+.portfolio .image-wrapper {
+   width: 50%;
+   height: 100%;
+   position: relative;
+   background-image: url('../media/notebook.jpeg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   box-shadow: 1px 2px 10px var(--black);
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.image-wrapper .overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: hsla(0, 0%, 0%, .2);
+}
+
+.image-wrapper .portfolio-btn {
+   display: none;
+   text-decoration: none;
+   color: var(--white);
+   font-size: 2rem;
+   padding: .5rem 1rem;
+   z-index: 2;
+   transition-duration: .5s;
+
+}
+
+.image-wrapper .overlay:hover {
+   background-color: none;
+   background-image: linear-gradient(to top, var(--purple) 40%, hsla(0, 0%,0%, 0) 100%);
+   opacity: .8;
+   cursor: pointer;
+}
+
+.image-wrapper .overlay:hover + .portfolio-btn {
+   display: block;
+}
+
 
