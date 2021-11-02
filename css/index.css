@@ -39,12 +39,12 @@ body {
    color: var(--white);
 }
 
-nav {
+#header nav {
    flex-grow: 3;
    /* background-color: crimson; */
 }
 
-nav ul {
+#header nav ul {
    list-style: none;
    margin: 0 0 0 2rem;
    padding: 0;
@@ -52,14 +52,13 @@ nav ul {
    justify-content: flex-start;
 }
 
-nav ul li {
+#header nav ul li {
    margin: 0 .3rem;
    box-sizing: border-box;
    cursor: pointer;
 }
 
-
-nav ul li a {
+#header nav ul li a {
    text-decoration: none;
    font-size: 1.2rem;
    color: var(--white);
@@ -68,12 +67,12 @@ nav ul li a {
    position: relative;
 }
 
-nav ul li a:hover {
+#header nav ul li a:hover {
    opacity: .8;
 }
 
 /* Nav items hover effect */
-nav ul li a::after {
+#header nav ul li a::after {
    content: "";
    background-color: var(--white);
    height: 2px;
@@ -84,11 +83,11 @@ nav ul li a::after {
    transition-duration: .3s;
 }
 
-nav ul li a:hover::after {
+#header nav ul li a:hover::after {
    width: 100%;
 }
 
-.contact {
+#header .contact {
    flex-grow: 1;
    display: flex;
    justify-content: center;
@@ -96,7 +95,7 @@ nav ul li a:hover::after {
    /* background-color: aqua; */
 }
 
-.contact .contact-btn  {
+#header .contact .contact-btn  {
    display: block;
    text-decoration: none;
    color: var(--white);
@@ -107,12 +106,12 @@ nav ul li a:hover::after {
    font-size: 1.05rem;
 }
 
-.contact-btn:hover {
+#header .contact-btn:hover {
    opacity: .8;
    background-image: linear-gradient(to right, var(--purple) 0%, var(--blue) 100%);
 }
 
-.contact span {
+#header .contact span {
    margin: 0 0 0 .3rem;
 }
 
@@ -358,9 +357,10 @@ nav ul li a:hover::after {
 
 .contact-us .schedule-btn {
    text-decoration: none;
+   text-align: center;
    color: var(--white);
    background-image: linear-gradient(to right, var(--blue) 0%, var(--purple) 100%);
-   padding: .8rem 1.6rem;
+   padding: 1.3rem 1.6rem;
    margin: 2rem 0;
    font-size: 1.05rem;
    border-radius: 5px;
@@ -371,4 +371,113 @@ nav ul li a:hover::after {
 .contact-us .schedule-btn:hover {
    opacity: .8;
    background-image: linear-gradient(to right, var(--purple) 0%, var(--blue) 100%);
+}
+
+
+/** ====== FOOTER ====== */
+#footer {
+   background-color: var(--black);
+   color: var(--white);
+   padding: 2rem 0;
+}
+
+#footer .back-to-top {
+   /* background-color: crimson; */
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+#footer .back-to-top a {
+   text-decoration: none;
+   color: var(--white);
+}
+
+#footer section {
+   display: flex;
+}
+
+#footer .placeholder {
+   flex-grow: 1;
+   /* background-color: aquamarine; */
+}
+
+#footer nav {
+   flex-grow: 1;
+   padding: 0 1rem;
+   /* background-color: crimson; */
+}
+
+#footer nav ul {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   margin: 0;
+   padding: 0;
+}
+
+#footer nav ul li {
+   list-style: none;   
+   margin: .5rem 0;
+}
+
+#footer nav ul li a {
+   text-decoration: none;
+   color: var(--white);
+   font-size: 1.2rem;
+}
+
+#footer nav ul li a:hover {
+   opacity: .8;
+   padding-left: .2rem;
+}
+
+#footer .contact-info {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   font-size: 1.3rem;
+   /* background-color: coral; */
+}
+
+#footer .contact-info .email {
+   margin-top: 2rem;
+}
+
+#footer .fa-phone-alt, #footer .fa-envelope {
+   background-color: var(--grey);
+   padding: .7rem;
+   border-radius: 50%;
+   margin-right: .5rem;
+}
+
+#footer .contact-info h2 {
+   margin: 0;
+}
+
+#footer .contact-info h2:nth-of-type(2) {
+   margin-top: 2rem;
+}
+
+#footer .contact-info a {
+   text-decoration: none;
+   color: var(--white);
+   letter-spacing: 1.2px;
+}
+
+#footer .contact-info .email-addr {
+   color: var(--blue);
+   font-weight: bold;
+   letter-spacing: 1.5px;
+}
+
+#footer .copyright {
+   /* background-color: brown; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2rem;
 }
