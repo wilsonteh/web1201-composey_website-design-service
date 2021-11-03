@@ -1,0 +1,50 @@
+@import url('./variable.css');
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /* height: 30px; */
+   background-color: hsla(0, 0%, 0%, .3);
+   z-index: 5;
+}
+
+#banner {
+   height: 90vh;
+   position: relative;
+   margin-bottom: 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: var(--white);
+   overflow: hidden;
+   text-align: center;
+}
+
+#banner #banner-pic {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -5;
+}
+
+#banner .title {
+   margin: 0;
+   font-size: 3rem;
+   z-index: 5;
+   position: relative;
+}
+
+#banner .title span {
+   border-bottom: 10px solid var(--purple);
+}
+
+#banner .para {
+   font-size: 1.2rem;
+   z-index: 5;
+
+}
