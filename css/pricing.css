@@ -1,0 +1,112 @@
+@import url('./variable.css'); 
+
+main {
+   width: 70%;
+   min-width: 800px;
+   margin: 0 auto;   
+}
+
+.pricing-table {
+   margin: 3rem 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.plan-box {
+   width: 30%;
+   border-radius: 4px;
+   box-shadow: 1px 2px 5px hsla(0, 0%, 0%, .3);
+   box-sizing: border-box;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition-duration: .3s;
+}
+
+.plan-box:hover {
+   transform: scale(110%);
+   box-shadow: none;
+   border: 3px dashed var(--purple);
+}
+
+.heading {
+   width: 100%;
+   text-align: center;
+}
+
+.heading .title {
+   margin: 0;
+}
+
+.heading .descript {
+   color: hsl(0, 0%, 60%);
+   margin: .5rem 0;
+}
+
+.heading .price {
+   color: var(--grey);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.heading .price span {
+   font-size: 2rem;
+   color: var(--black);
+   font-weight: bold;
+   margin-left: .3rem;
+}
+
+.line {
+   width: 100%;
+   height: 2px;
+   background-color: hsl(0, 0%, 93%);
+   margin: 1rem auto;
+}
+
+.features {
+   background-color: hsl(0, 0%, 100%);
+   padding: 1rem;
+}
+
+.features ul {
+   margin: 0;
+   padding: 0;
+}
+
+.features ul li {
+   list-style: none;
+   margin: .5rem 0;
+}
+
+.features .fa-check-circle {
+   color: var(--blue);
+   margin-right: .5rem;
+}
+
+.get-started {
+   text-decoration: none;
+   color: var(--white);
+   background-image: linear-gradient(to right, var(--blue) 0%, var(--purple) 100%);
+   text-align: center;
+   padding: .8rem .4rem;
+   width: 50%;
+   border-radius: 5px;
+   box-shadow: 1px 2px 5px hsla(0, 0%, 0%, .3);
+}
+
+.standard-plan {
+   display: flex;
+   flex-direction: column;
+   /* background-color: crimson; */
+}
+
+.premium-plan {
+   width: 30%;
+}
+
+.professional-plan {
+   width: 30%;
+}
+
