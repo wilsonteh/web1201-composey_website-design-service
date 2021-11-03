@@ -4,8 +4,57 @@ main {
    width: 70%;
    min-width: 800px;
    margin: 0 auto;   
+   height: auto;
 }
 
+/** ======= PRICING INTRO SECTION ======= */
+.pricing-intro {
+   display: flex;
+   margin: 2rem 0;
+   height: 50vh;
+}
+
+.illus-wrapper {
+   width: 50%;
+   position: relative;
+   /* background-color: crimson; */
+}
+
+/* relative to illus-wrapper */
+#money-illus {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 80%;
+}
+
+.text-wrapper {
+   width: 50%;
+   /* background-color: cadetblue; */
+}
+
+.pricing-intro .title {
+   text-align: center;
+   letter-spacing: 1.5px;
+   text-transform: lowercase;
+}
+
+.pricing-intro .para {
+   font-size: 1.2rem;
+   line-height: 2.2rem;
+   letter-spacing: 1.1px;
+   /* text-align: center; */
+}
+
+.section-text {
+   font-size: 2rem;
+   text-transform: lowercase;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+/** ======= PRICING TABLE SECTION ======= */
 .pricing-table {
    margin: 3rem 0;
    display: flex;
@@ -27,7 +76,7 @@ main {
 .plan-box:hover {
    transform: scale(110%);
    box-shadow: none;
-   border: 3px dashed var(--purple);
+   border: 3px solid var(--purple);
 }
 
 .heading {
@@ -91,9 +140,15 @@ main {
    background-image: linear-gradient(to right, var(--blue) 0%, var(--purple) 100%);
    text-align: center;
    padding: .8rem .4rem;
+   margin-bottom: 1rem;
    width: 50%;
    border-radius: 5px;
    box-shadow: 1px 2px 5px hsla(0, 0%, 0%, .3);
+}
+
+.get-started:hover {
+   opacity: .9;
+   background-image: linear-gradient(to right, var(--purple) 0%, var(--blue) 100%);
 }
 
 .standard-plan {
@@ -110,3 +165,32 @@ main {
    width: 30%;
 }
 
+.bottom {
+   margin: 5rem 0;
+   text-align: center;
+   position: relative;
+   /* background-color: cadetblue; */
+}
+
+.bottom h1 {
+   font-size: 2rem;
+}
+
+/* relative to .bottom */
+#laptop-illus {
+   position: absolute;
+   top: -50%;
+   right: 0;
+   width: 30%;
+}
+
+.bottom .contact-btn {
+   text-decoration: none;
+   color: var(--white);
+   background-image: linear-gradient(to right, var(--blue) 0%, var(--purple) 100%);
+   text-align: center;
+   padding: .8rem 1.5rem;
+   width: 50%;
+   border-radius: 5px;
+   box-shadow: 1px 2px 5px hsla(0, 0%, 0%, .3);
+}
