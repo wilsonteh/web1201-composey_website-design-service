@@ -48,3 +48,97 @@
    z-index: 5;
 
 }
+
+main {
+   width: 80%;
+   margin: 2rem auto;
+   display: flex;
+   /* background-color: crimson; */
+}
+
+main .illus-wrapper {
+   width: 50%;
+   text-align: center;
+   position: relative;
+   padding: 1rem 2rem;
+   /* background-color: chartreuse; */
+}
+
+.illus-wrapper p {
+   font-size: 1.2rem;
+   line-height: 2.2rem;
+   letter-spacing: 1.1px;
+}
+
+#contact-illus {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   width: 80%;
+}
+
+/** ====== CONTACT FORM ====== */
+#contact-form {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   font-size: 1.1rem;
+   padding: 1rem;
+   /* background-color: cadetblue; */
+}
+
+#contact-form label {
+   margin: 1rem 0 .3rem 0;
+}
+
+#contact-form input, #message-field {
+   padding: .5rem;
+   font-family: inherit;
+   font-size: 1.1rem;
+}
+
+#contact-form input {
+   border: none;
+   border-bottom: 1px solid hsl(0, 0%, 0%);
+}
+
+#contact-form input:focus, select:focus {
+   outline: 2px solid var(--purple);
+   border: none;
+}
+
+#contact-form select {
+   padding: .5rem;
+   font-size: 1.1rem;
+}
+
+#message-field {
+   resize: vertical;
+}
+
+#message-field:focus {
+   outline: 2px solid var(--purple);
+   border: none;
+}
+
+#message-field::placeholder {
+   font-size: 1.1rem;
+}
+
+#contact-form .submit-btn {
+   margin: 1rem 0;
+   align-self: flex-end;
+   color: var(--white);
+   background-color: var(--black);
+   text-align: center;
+   padding: .6rem 2rem;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   letter-spacing: 1.2px;
+   cursor: pointer;
+}
+
+#contact-form .submit-btn:hover {
+   background-color: var(--grey);
+}

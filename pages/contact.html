@@ -46,6 +46,61 @@
       </p>
    </section>
 
+   <br>
+
+   <main>
+      <div class="illus-wrapper">
+         <h1>Contact us today</h1>
+         <p>
+            Get your project started right away!
+         </p>
+         <img src="../media/illustrations/contact-us.svg" id="contact-illus" alt="contact-us">
+      </div>
+
+      <form action="" id="contact-form">
+
+         <label for="name-field">Name: </label>
+         <input type="text" name="name" id="name-field" placeholder="Your Name" required >
+      
+         <label for="salutation-field">Salutation: </label>
+         <select name="salutation" id="salutation-field" required > 
+            <option value="">--Select Salutation--</option>
+            <option value="mr">Mr.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="ms">Ms.</option>
+            <option value="dr">Dr.</option>
+         </select>
+
+         <label for="name-field">Company Name: </label>
+         <input type="text" name="company" id="company-field" placeholder="Your Company Name (optional)">
+
+         <label for="email-field">Email: </label>
+         <input type="email" name="email" id="email-field" placeholder="example@email.com" required>
+
+         <label for="phone-field">Phone Number: </label>
+         <input type="tel" name="phoneNo" id="phone-field" placeholder="e.g: 016 290 3099" required>
+
+         <label>Preferred method of contact: </label>
+         <div class="radio-wrapper">
+            <input type="radio" name="preferred-contact" id="email-radio">
+            <label for="email-radio">Email</label>
+   
+            <input type="radio" name="preferred-contact" id="phone-radio">
+            <label for="phone-radio">Phone</label>
+         </div>
+      
+         <label for="message-field">Message: </label>
+         <textarea name="message" id="message-field" cols="30" rows="5" 
+            placeholder="Briefly describe your website request..." required>
+         </textarea>
+
+         <input type="submit" value="Submit" class="submit-btn">
+      </form>
+
+   </main>
+
+   <br>
+
    <footer id="footer">
       <div class="back-to-top">
          <a href="#top">Back to top</a>
