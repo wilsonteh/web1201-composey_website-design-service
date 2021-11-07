@@ -128,7 +128,6 @@
    height: 50vh;
    display: flex;
    margin: 2rem 0;
-   /* background-color: coral; */
 }
 
 .portfolio .text-wrapper {
@@ -169,30 +168,29 @@
    width: 100%;
    height: 100%;
    background-color: hsla(0, 0%, 0%, .2);
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
 }
 
 .image-wrapper .portfolio-btn {
-   display: none;
+   opacity: 0;
    text-decoration: none;
    color: var(--white);
-   font-size: 2rem;
+   font-size: 4vw;
    padding: .5rem 1rem;
-   z-index: 2;
-   transition-duration: .5s;
-
+   transition-duration: .3s;
 }
 
 .image-wrapper .overlay:hover {
    background-color: none;
-   background-image: linear-gradient(to top, var(--purple) 40%, hsla(0, 0%,0%, 0) 100%);
-   opacity: .8;
+   background-image: linear-gradient(to top, var(--purple) 5%, hsla(0, 0%, 0%, 0) 100%);
    cursor: pointer;
 }
 
-.image-wrapper .overlay:hover + .portfolio-btn {
-   display: block;
+.image-wrapper .overlay:hover > .portfolio-btn {
+   opacity: .9;
 }
-
 
 /** ===== CONTACT US SECTION =====  */
 .contact-us {
