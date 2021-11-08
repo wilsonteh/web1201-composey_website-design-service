@@ -10,7 +10,7 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto;
-   gap: 2rem 3rem;
+   gap: 3rem;
 }
 
 .portfolio-item {
@@ -30,6 +30,7 @@
    -ms-overflow-style: none; /* Edge */
    scrollbar-width: none; /* Firefox */
    overflow-y: scroll; 
+   position: relative;
 }
 
 /* hide chrome scrollbar */
@@ -37,6 +38,26 @@
    display: none;
    -ms-overflow-style: none;
    scrollbar-width: none;
+}
+
+.portfolio-item .img-wrapper a {
+   text-decoration: none;
+}
+
+.portfolio-item .img-wrapper .overlay-text {
+   display: none;
+}
+
+.portfolio-item .img-wrapper:hover .overlay-text {
+   display: block;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   text-align: center;
+   text-decoration: none;
+   color: var(--white);
+   padding: .3rem 0;
+   background-color: hsla(0, 0%, 0%, .5);
 }
 
 .portfolio-item .img-wrapper .website-img {
