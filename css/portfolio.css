@@ -1,0 +1,60 @@
+@import url('./variable.css');
+
+#container {
+   width: 70%;
+   min-width: 800px;
+   margin: 3rem auto;
+}
+
+.portfolio-list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   gap: 2rem 3rem;
+}
+
+.portfolio-item {
+   height: 40vh;
+   display: flex;
+   flex-direction: column;
+   /* background-color: cadetblue; */
+}
+
+.portfolio-item .img-wrapper {
+   height: 85%;
+   overflow: scroll;
+   cursor: pointer;
+   box-shadow: 1px 2px 10px hsla(0, 0%, 0%, .3);
+   /* background-color: crimson; */
+   /* Hide scrollbar Xbrowsers */
+   -ms-overflow-style: none; /* Edge */
+   scrollbar-width: none; /* Firefox */
+   overflow-y: scroll; 
+}
+
+/* hide chrome scrollbar */
+.portfolio-item .img-wrapper::-webkit-scrollbar {
+   display: none;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+
+.portfolio-item .img-wrapper .website-img {
+   width: 100%;
+}
+
+.portfolio-item .title {
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+.portfolio-item .title a {
+   display: block;
+   text-decoration: none;
+}
+
+.portfolio-item .title a:hover {
+   text-decoration: underline;
+}
