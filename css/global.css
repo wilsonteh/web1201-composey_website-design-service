@@ -1,5 +1,9 @@
 @import url('./variable.css');
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    margin: 0;
    padding: 0;
@@ -126,11 +130,25 @@ body {
    /* background-color: crimson; */
    text-align: center;
    margin-bottom: 2rem;
+   cursor: pointer;
+}
+
+#footer .fa-arrow-up {
+   color: var(--grey);
+   background-color: var(--white);
+   padding: .4rem;
+   border-radius: 50%;
+   margin-right: .5rem;
 }
 
 #footer .back-to-top a {
    text-decoration: none;
    color: var(--white);
+}
+
+#footer .back-to-top a:hover {
+   text-decoration: underline;
+   opacity: .9;
 }
 
 #footer section {
