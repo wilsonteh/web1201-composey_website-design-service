@@ -55,14 +55,15 @@
          <p>
             Get your project started right away!
          </p>
+
          <img src="../media/illustrations/contact-us.svg" id="contact-illus" alt="contact-us">
       </div>
 
-      <form action="" id="contact-form">
-
+      <form id="contact-form" action="../php/FormConfirmation.php" method="POST" >
          <label for="name-field">Name: </label>
          <input type="text" name="name" id="name-field" placeholder="Your Name" required >
-      
+         <small id="name-error"></small>
+         
          <label for="salutation-field">Salutation: </label>
          <select name="salutation" id="salutation-field" required > 
             <option value="">--Select Salutation--</option>
@@ -71,31 +72,37 @@
             <option value="ms">Ms.</option>
             <option value="dr">Dr.</option>
          </select>
-
-         <label for="name-field">Company Name: </label>
-         <input type="text" name="company" id="company-field" placeholder="Your Company Name (optional)">
-
+         <small id="salutation-error"></small>
+         
+         <label for="name-field">Company: </label>
+         <input type="text" name="company" id="company-field" placeholder="Company Name (optional)">
+         <small id="company-error"></small>
+         
          <label for="email-field">Email: </label>
          <input type="email" name="email" id="email-field" placeholder="example@email.com" required>
-
+         <small id="email-error"></small>
+         
          <label for="phone-field">Phone Number: </label>
          <input type="tel" name="phoneNo" id="phone-field" placeholder="e.g: 016 290 3099" required>
-
+         <small id="phone-error"></small>
+         
          <label>Preferred method of contact: </label>
          <div class="radio-wrapper">
-            <input type="radio" name="preferred-contact" id="email-radio">
+            <input type="radio" name="preferredContact" id="email-radio" required>
             <label for="email-radio">Email</label>
-   
-            <input type="radio" name="preferred-contact" id="phone-radio">
+            
+            <input type="radio" name="preferredContact" id="phone-radio" required>
             <label for="phone-radio">Phone</label>
          </div>
-      
+         <small id="preferred-error"></small>
+         
          <label for="message-field">Message: </label>
          <textarea name="message" id="message-field" cols="30" rows="5" 
-            placeholder="Briefly describe your website request..." required>
-         </textarea>
+            placeholder="Briefly describe your website request..." required></textarea>
+         <small id="msg-error"></small>
 
          <input type="submit" value="Submit" class="submit-btn">
+
       </form>
 
    </main>
@@ -143,7 +150,9 @@
          &copy; 2021 Composey
       </div>
    </footer>
-   
+
+
+   <script src="../js/FormValidation.js"></script>
 </body>
 
 </html>
