@@ -5,5 +5,6 @@
    --lightGrey: hsl(0, 0%, 95%);
    --blue: #4777e6;
    --purple: hsl(263, 77%, 62%);
+   --errorColor: hsl(0, 80%, 60%);
 }
 
