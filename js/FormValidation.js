@@ -30,6 +30,11 @@ function validateName(element, input) {
       element.style.border = 'none';
       element.style.borderBottom = `2px solid ${errorColor}`;
       
+   } else if (input.trim().length < 3) {
+      nameMsg.innerHTML = "Name is too short";
+      element.style.border = 'none';
+      element.style.borderBottom = `2px solid ${errorColor}`;
+      
    } else {
       nameMsg.innerHTML = "";
       element.style.border = 'none';
@@ -56,11 +61,6 @@ function validateEmail(element, input) {
       element.style.border = 'none';
       element.style.border = `2px solid ${errorColor}`;
 
-   } else if (!input.includes('@') || !input.includes('.')) {
-      emailMsg.innerHTML = "Please enter a valid email";
-      element.style.border = 'none';
-      element.style.border = `2px solid ${errorColor}`;
-      
    } else {
       emailMsg.innerHTML = "";
       element.style.border = 'none';

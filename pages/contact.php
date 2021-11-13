@@ -9,8 +9,9 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title> Contact | Composey </title>
 
-   <link rel="stylesheet" href="../css/global.css">
-   <link rel="stylesheet" href="../css/contact.css">
+   <!-- Cache issue, the code will force css file to reload -->
+   <link rel="stylesheet" href="../css/global.css?v=<?php echo time(); ?>">
+   <link rel="stylesheet" href="../css/contact.css?v=<?php echo time(); ?>">
 
 </head>
 
@@ -49,19 +50,20 @@
 
    <br>
 
+   
    <main>
       <div class="illus-wrapper">
          <h1>Contact us today</h1>
          <p>
             Get your project started right away!
          </p>
-
+         
          <img src="../media/illustrations/contact-us.svg" id="contact-illus" alt="contact-us">
       </div>
 
-      <form id="contact-form" action="../php/FormConfirmation.php" method="POST" >
+      <form id="contact-form" action="contact.php" method="POST" >
          <label for="name-field">Name: </label>
-         <input type="text" name="name" id="name-field" placeholder="Your Name" required>
+         <input type="text" name="name" id="name-field" placeholder="Your Name" required minlength="3">
          <small id="name-error"></small>
          
          <label for="salutation-field">Salutation: </label>
@@ -83,7 +85,7 @@
          <small id="email-error"></small>
          
          <label for="phone-field">Phone Number: </label>
-         <input type="tel" name="phoneNo" id="phone-field" placeholder="e.g: 016 290 3099" required>
+         <input type="tel" name="phoneNo" id="phone-field" placeholder="016 290 3099" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
          <small id="phone-error"></small>
          
          <label>Preferred method of contact: </label>
@@ -97,14 +99,41 @@
          <small id="preferred-error"></small>
          
          <label for="message-field">Message: </label>
-         <textarea name="message" id="message-field" cols="30" rows="5" 
+         <textarea name="message" id="message-field" cols="30" rows="5" minlength="10" 
             placeholder="Briefly describe your website request..." required></textarea>
          <small id="msg-error"></small>
 
          <input type="submit" value="Submit" class="submit-btn">
 
       </form>
+      
+      <!-- Show confirmation msg when form has been submitted -->
+      <?php if (isset($_POST['name'])) { ?>
+         <div class="dialog-overlay">
+            <div class="dialog-box">
+               <div class="modal-header">
+                  <h3 class="modal-title">Form Submitted</h3>
+                  <i class="fas fa-times close-btn"></i>
+               </div>
+               <hr>
+               <div class="modal-body">
+                  <p>
+                     Thanks for contacting us, <strong><?php echo ucfirst($_POST['name']) ?></strong>. 
+                     <br>
+                     Please allow up to 48 hours for us to get back to you. 
+                  </p>
+               </div>
+               <hr>
+               <div class="modal-footer">
+                  <button class="confirm-btn">Confirm</button>
+               </div>
+            </div>
+        </div>
+      <?php } ?>
 
+    
+      
+   
    </main>
 
    <br>
@@ -152,7 +181,9 @@
    </footer>
 
 
-   <script src="../js/FormValidation.js"></script>
+   <script src="../js/formValidation.js"></script>
+   <script src="../js/contact.js"></script>
+   
 </body>
 
 </html>
