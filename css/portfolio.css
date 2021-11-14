@@ -29,7 +29,6 @@
    /* Hide scrollbar Xbrowsers */
    -ms-overflow-style: none; /* Edge */
    scrollbar-width: none; /* Firefox */
-   overflow-y: scroll; 
    position: relative;
 }
 
