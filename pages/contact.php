@@ -30,7 +30,7 @@
          </ul>
       </nav>
       <div class="contact">
-         <a href="../pages/contact.html" class="contact-btn">
+         <a href="../pages/contact.php" class="contact-btn">
             <i class="far fa-envelope"></i>
             <span>Contact</span>
          </a>
@@ -154,7 +154,7 @@
                <li><a href="../">Home</a></li>
                <li><a href="../pages/portfolio.html">Portfolio</a></li>
                <li><a href="../pages/pricing.html">Pricing</a></li>
-               <li><a href="../pages/contact.html">Contact</a></li>
+               <li><a href="../pages/contact.php">Contact</a></li>
             </ul>
          </nav>   
          
