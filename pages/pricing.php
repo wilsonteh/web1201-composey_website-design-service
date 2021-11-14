@@ -24,8 +24,8 @@
       <nav>
          <ul>
             <li><a href="../">Home</a></li>
-            <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/pricing.html">Pricing</a></li>
+            <li><a href="../pages/portfolio.php">Portfolio</a></li>
+            <li><a href="../pages/pricing.php">Pricing</a></li>
          </ul>
       </nav>
       <div class="contact">
@@ -142,8 +142,8 @@
          <nav>
             <ul>
                <li><a href="../">Home</a></li>
-               <li><a href="../pages/portfolio.html">Portfolio</a></li>
-               <li><a href="../pages/pricing.html">Pricing</a></li>
+               <li><a href="../pages/portfolio.php">Portfolio</a></li>
+               <li><a href="../pages/pricing.php">Pricing</a></li>
                <li><a href="../pages/contact.php">Contact</a></li>
             </ul>
          </nav>   

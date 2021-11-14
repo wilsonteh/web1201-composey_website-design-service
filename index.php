@@ -24,8 +24,8 @@
       <nav>
          <ul>
             <li><a href="./">Home</a></li>
-            <li><a href="./pages/portfolio.html">Portfolio</a></li>
-            <li><a href="./pages/pricing.html">Pricing</a></li>
+            <li><a href="./pages/portfolio.php">Portfolio</a></li>
+            <li><a href="./pages/pricing.php">Pricing</a></li>
          </ul>
       </nav>
       <div class="contact">
@@ -43,7 +43,7 @@
          Composing a website based on <br> your alluring ideas
       </div>
       <div class="cta">
-         <a class="portfolio-cta" href="./pages/portfolio.html">View our portfolio</a>
+         <a class="portfolio-cta" href="./pages/portfolio.php">View our portfolio</a>
          <a class="contact-cta" href="./pages/contact.php">Get in touch</a>
       </div>
    </section>
@@ -75,7 +75,7 @@
          
          <div class="image-wrapper">
             <div class="overlay">
-               <a href="./pages/portfolio.html" class="portfolio-btn">explore our recent projects</a>
+               <a href="./pages/portfolio.php" class="portfolio-btn">explore our recent projects</a>
             </div>
          </div>
       </section>
@@ -110,8 +110,8 @@
          <nav>
             <ul>
                <li><a href="./">Home</a></li>
-               <li><a href="./pages/portfolio.html">Portfolio</a></li>
-               <li><a href="./pages/pricing.html">Pricing</a></li>
+               <li><a href="./pages/portfolio.php">Portfolio</a></li>
+               <li><a href="./pages/pricing.php">Pricing</a></li>
                <li><a href="./pages/contact.php">Contact</a></li>
             </ul>
          </nav>   
