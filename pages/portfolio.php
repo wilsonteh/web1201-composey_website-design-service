@@ -39,7 +39,9 @@
    <main id="container">
       <h1>Portfolio</h1>
 
-      <p class="text">Browse at some of our past projects</p>
+      <p class="text">
+         Browse at some of our past projects, of which can be previewed
+      </p>
 
       <section class="portfolio-list">
          <div class="portfolio-item">
