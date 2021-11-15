@@ -5,6 +5,7 @@ let modalOverlay = document.querySelector('.dialog-overlay');
 let modalCloseBtn = document.querySelector('.close-btn');
 let modalConfirmBtn = document.querySelector('.confirm-btn');
 
+console.log(modalOverlay);
 
 function closeModal(e) {
    /* target --> element where event occured
@@ -17,6 +18,8 @@ function closeModal(e) {
 }
 
 function disableBodyScroll() {
+   if (!modalOverlay) return;
+
    let isModalVisible = window.getComputedStyle(modalOverlay).display === 'block';
    
    if (isModalVisible) {
@@ -26,8 +29,13 @@ function disableBodyScroll() {
    }
 }
 
-// ! remove this when production 
-// this works becoz every time the form is submitted, the script will load agn
+function checkNullAndExecute(element, execution) {
+   // if element is NOT NULL, apply event listener to that element
+   if (element) {
+      
+   } 
+}
+
 disableBodyScroll();
 
 modalCloseBtn.addEventListener('click', e => closeModal(e));

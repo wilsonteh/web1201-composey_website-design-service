@@ -59,7 +59,7 @@
          <div class="right-wrapper">
             <h1 class="title">who are we</h1>
             <div class="text">
-               We are a group of web designers that are dedicated to make your website ideas come true. 
+               We are a group of web designers and developers dedicated to make your website ideas come true. 
                Along with that, we will provide you with the services required to successfully allow others 
                to view your website in all its glory.
             </div>
@@ -70,7 +70,7 @@
       <section class="portfolio">
          <div class="text-wrapper">
             <h1 class="title">our portfolio</h1>
-            At Composey, we have worked with some notably big names in the business world
+            At Composey, we have worked with small business owners to help them digitalize their businesses  
          </div>
          
          <div class="image-wrapper">
@@ -88,7 +88,7 @@
          <div class="right-wrapper">
             <h1 class="title">got an idea in mind? </h1>
             <div class="text">
-               To better understand your needs vision vision of a website, you can schedule 
+               To better understand your needs and vision of a website, you can schedule 
                a free consultation session with our professional group.
             </div>
             <a href="./pages/contact.php" class="schedule-btn">Schedule consultation</a>
