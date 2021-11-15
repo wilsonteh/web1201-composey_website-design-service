@@ -40,11 +40,11 @@
       <div class="title">
          <span>Composey</span>
          <br>
-         Composing a website based on <br> your alluring ideas
+         Composing A Website Based on <br> Your Alluring Ideas
       </div>
       <div class="cta">
-         <a class="portfolio-cta" href="./pages/portfolio.php">View our portfolio</a>
-         <a class="contact-cta" href="./pages/contact.php">Get in touch</a>
+         <a class="portfolio-cta" href="./pages/portfolio.php">View Our Portfolio</a>
+         <a class="contact-cta" href="./pages/contact.php">Get In Touch</a>
       </div>
    </section>
 
@@ -57,7 +57,7 @@
          <div class="line"></div>
 
          <div class="right-wrapper">
-            <h1 class="title">who are we</h1>
+            <h1 class="title">Who Are We</h1>
             <div class="text">
                We are a group of web designers and developers dedicated to make your website ideas come true. 
                Along with that, we will provide you with the services required to successfully allow others 
@@ -69,13 +69,13 @@
 
       <section class="portfolio">
          <div class="text-wrapper">
-            <h1 class="title">our portfolio</h1>
+            <h1 class="title">Our Portfolio</h1>
             At Composey, we have worked with small business owners to help them digitalize their businesses  
          </div>
          
          <div class="image-wrapper">
             <div class="overlay">
-               <a href="./pages/portfolio.php" class="portfolio-btn">explore our recent projects</a>
+               <a href="./pages/portfolio.php" class="portfolio-btn">Explore Our Recent Projects</a>
             </div>
          </div>
       </section>
@@ -86,7 +86,7 @@
          </div>
 
          <div class="right-wrapper">
-            <h1 class="title">got an idea in mind? </h1>
+            <h1 class="title">Got an Idea in Mind? </h1>
             <div class="text">
                To better understand your needs and vision of a website, you can schedule 
                a free consultation session with our professional group.

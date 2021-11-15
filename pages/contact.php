@@ -41,9 +41,9 @@
       <div class="overlay"></div>
       <img src="../media/two-person.jfif" id="banner-pic" alt="two-person-discussing">
 
-      <h1 class="title">Let's get in <span>touch</span>!</h1>      
+      <h1 class="title">Let's Get In <span>Touch</span>!</h1>      
       <p class="para">
-         Express your ideas with our experienced developers <br>  
+         Express your ideas with our experienced team <br>  
          We would like to hear from you. 
       </p>
    </section>
@@ -53,9 +53,9 @@
    
    <main>
       <div class="illus-wrapper">
-         <h1>Contact us today</h1>
+         <h1>Contact Us Today</h1>
          <p>
-            Get your project started right away!
+            Get Your Project Started Right Away!
          </p>
          
          <img src="../media/illustrations/contact-us.svg" id="contact-illus" alt="contact-us">

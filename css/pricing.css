@@ -36,19 +36,15 @@ main {
 .pricing-intro .title {
    text-align: center;
    letter-spacing: 1.5px;
-   text-transform: lowercase;
 }
 
 .pricing-intro .para {
    font-size: 1.2rem;
    line-height: 2.2rem;
-   letter-spacing: 1.1px;
-   /* text-align: center; */
 }
 
 .section-text {
    font-size: 2rem;
-   text-transform: lowercase;
    text-align: center;
    font-weight: bold;
 }

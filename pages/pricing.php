@@ -45,18 +45,20 @@
          <div class="text-wrapper">
             <h1 class="title">Website Pricing Plans</h1>
             <p class="para">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe deleniti recusandae mollitia pariatur et, debitis dolore fugit ipsum aperiam neque eveniet quasi commodi delectus illo! Necessitatibus doloremque cum recusandae?
+               At Composey, we emphasize on balancing the price of your website design to the effort required 
+               to create the website in full. The prices of our service would be at a much fairer and affordable 
+               price than others but no compromises are made in the process of designing your website. 
             </p>
          </div>
       </section>
 
-      <div class="section-text">Our website pricing are as following:</div>
+      <div class="section-text">Our Website Pricing Are As Following:</div>
 
       <section class="pricing-table">
          <div class="plan-box standard-plan">
             <div class="heading">
                <h2 class="title">Standard</h2>
-               <div class="descript">Everything you need to get online!</div>
+               <div class="descript">Everything You Need To Get Online!</div>
                <div class="price">RM <span>2,500</span></div>
             </div>
             
@@ -78,7 +80,7 @@
          <div class="plan-box premium-plan">
             <div class="heading">
                <h2 class="title">Premium</h2>
-               <div class="descript">Faster website loading speed</div>
+               <div class="descript">Faster Website Loading Speed</div>
                <div class="price">RM <span>4,500</span></div>
             </div>
 
@@ -100,7 +102,7 @@
          <div class="plan-box professional-plan">
             <div class="heading">
                <h2 class="title">Professional</h2>
-               <div class="descript">Professional looking website</div>
+               <div class="descript">Professional Looking Website</div>
                <div class="price">RM <span>6,500</span></div>
             </div>
             
@@ -110,7 +112,7 @@
                <ul>
                   <li><i class="fas fa-check-circle"></i>30 web pages</li>
                   <li><i class="fas fa-check-circle"></i>8 revisions</li>
-                  <li><i class="fas fa-check-circle"></i>24/7 support</li>
+                  <li><i class="fas fa-check-circle"></i>Email + phone support</li>
                   <li><i class="fas fa-check-circle"></i>Free 2 years hosting</li>
                   <li><i class="fas fa-check-circle"></i>Search Engine Optimization</li>
                </ul>
@@ -121,7 +123,7 @@
       </section>      
 
       <section class="bottom">
-         <h1>Ready to start your own unique website?</h1>
+         <h1>Ready To Start Your Own Unique Website?</h1>
          <a href="../pages/contact.php" class="contact-btn">Get in touch with us!</a>
          <img src="../media/illustrations/noted-pc.svg" id="laptop-illus" alt="noted-pc">
       </section>
