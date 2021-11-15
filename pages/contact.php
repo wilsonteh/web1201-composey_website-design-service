@@ -16,6 +16,27 @@
 </head>
 
 <body>
+   <?php 
+      include "../php/db_connection.php";
+      include "../php/create_table.php";
+      include "../php/insert_data.php";
+
+      $connection = createConnection();
+
+      if ($connection) {
+         echo 'Connected to database successfully';
+
+         if (isset($_POST['submit'])) {
+            insert_data($_POST, $connection);
+         } 
+         
+      } else {
+         echo 'Error connecting to database' . mysqli_connect_error();
+      }
+
+
+   ?>
+
    <a id="top" href=""></a>
 
    <header id="header">
@@ -49,7 +70,6 @@
    </section>
 
    <br>
-
    
    <main>
       <div class="illus-wrapper">
@@ -77,7 +97,7 @@
          <small id="salutation-error"></small>
          
          <label for="name-field">Company: </label>
-         <input type="text" name="company" id="company-field" placeholder="Company Name (optional)" >
+         <input type="text" name="company" id="company-field" placeholder="Company Name (optional)">
          <small id="company-error"></small>
          
          <label for="email-field">Email: </label>
@@ -90,10 +110,10 @@
          
          <label>Preferred method of contact: </label>
          <div class="radio-wrapper">
-            <input type="radio" name="preferredContact" id="email-radio" required>
+            <input type="radio" name="preferredContact" id="email-radio" value="email" required>
             <label for="email-radio">Email</label>
             
-            <input type="radio" name="preferredContact" id="phone-radio" required>
+            <input type="radio" name="preferredContact" id="phone-radio" value="phone" required>
             <label for="phone-radio">Phone</label>
          </div>
          <small id="preferred-error"></small>
@@ -103,12 +123,12 @@
             placeholder="Briefly describe your website request..." required></textarea>
          <small id="msg-error"></small>
 
-         <input type="submit" value="Submit" class="submit-btn">
+         <input type="submit" value="Submit" name="submit" class="submit-btn">
 
       </form>
       
       <!-- Show confirmation msg when form has been submitted -->
-      <?php if (isset($_POST['name'])) { ?>
+      <?php if (isset($_POST['submit'])) { ?>
          <div class="dialog-overlay">
             <div class="dialog-box">
                <div class="modal-header">
