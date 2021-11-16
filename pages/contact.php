@@ -26,6 +26,8 @@
       if ($connection) {
          echo 'Connected to database successfully';
 
+         createTable();
+
          if (isset($_POST['submit'])) {
             insert_data($_POST, $connection);
          } 
