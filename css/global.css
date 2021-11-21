@@ -231,8 +231,7 @@ body {
 }
 
 #footer .contact-info .email-addr {
-   color: var(--blue);
-   font-weight: bold;
+   color: var(--white);
    letter-spacing: 1.5px;
 }
 

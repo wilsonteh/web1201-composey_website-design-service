@@ -118,15 +118,13 @@
          
          <div class="contact-info">
             <div class="phone-info">
-               <!-- <h2>Customer Service:</h2> -->
                <i class="fas fa-phone-alt"></i>
                <a href="https://wa.me/60162390913?text=Hello Composey!" class="phoneNo">016-239 0913</a>
             </div>
       
             <div class="email">
-               <!-- <h2>Shoot us an email:</h2> -->
                <i class="fas fa-envelope"></i>
-               <a href="mailto:hello@composey.com" class="email-addr">hello@composey.com</a>
+               <p class="email-addr">hello@composey.com</p>
             </div>
          </div>
          

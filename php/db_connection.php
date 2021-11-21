@@ -6,8 +6,10 @@ if (!function_exists('createConnection')) {
       $cleardb_server = $cleardb_url["host"];
       $cleardb_username = $cleardb_url["user"];
       $cleardb_password = $cleardb_url["pass"];
-      $cleardb_db = substr($cleardb_url["path"],1);
+      $cleardb_db = substr($cleardb_url["path"], 1);
 
+
+      // ! Used for local 
       // $serverName = 'localhost';
       // $username = 'root';
       // $pw = 'Ilovephp!!99';

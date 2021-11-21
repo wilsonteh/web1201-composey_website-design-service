@@ -188,7 +188,7 @@
             <div class="email">
                <!-- <h2>Shoot us an email:</h2> -->
                <i class="fas fa-envelope"></i>
-               <a href="mailto:hello@composey.com" class="email-addr">hello@composey.com</a>
+               <p class="email-addr">hello@composey.com</p>
             </div>
          </div>
          
