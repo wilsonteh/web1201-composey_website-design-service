@@ -160,7 +160,7 @@
             <div class="email">
                <!-- <h2>Shoot us an email:</h2> -->
                <i class="fas fa-envelope"></i>
-               <p class="email-addr">hello@composey.com</p>
+               <span class="email-addr">hello@composey.com</span>
             </div>
          </div>
          

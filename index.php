@@ -124,7 +124,7 @@
       
             <div class="email">
                <i class="fas fa-envelope"></i>
-               <p class="email-addr">hello@composey.com</p>
+               <span class="email-addr">hello@composey.com</span>
             </div>
          </div>
          
