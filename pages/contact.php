@@ -13,30 +13,33 @@
    <link rel="stylesheet" href="../css/global.css?v=<?php echo time(); ?>">
    <link rel="stylesheet" href="../css/contact.css?v=<?php echo time(); ?>">
 
-   <?php 
-      include "../php/db_connection.php";
-      include "../php/create_table.php";
-      include "../php/insert_data.php";
-
-      $connection = createConnection();
-
-      if ($connection) {
-         echo 'Connected to database successfully';
-
-         createTable();
-
-         if (isset($_POST['submit'])) {
-            insert_data($_POST, $connection);
-         } 
-         
-      } else {
-         echo 'Error connecting to database' . mysqli_connect_error();
-      }
-
-   ?>
 </head>
 
 <body>
+
+   <div id="php-message" style="display: none;">
+      <?php 
+         include "../php/db_connection.php";
+         include "../php/create_table.php";
+         include "../php/insert_data.php";
+
+         $connection = createConnection();
+
+         if ($connection) {
+            echo 'Connected to database successfully';
+
+            createTable();
+
+            if (isset($_POST['submit'])) {
+               insert_data($_POST, $connection);
+            } 
+            
+         } else {
+            echo 'Error connecting to database' . mysqli_connect_error();
+         }
+
+      ?>
+   </div>
 
    <a id="top" href=""></a>
 
