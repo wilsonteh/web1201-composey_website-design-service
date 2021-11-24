@@ -13,9 +13,6 @@
    <link rel="stylesheet" href="../css/global.css?v=<?php echo time(); ?>">
    <link rel="stylesheet" href="../css/contact.css?v=<?php echo time(); ?>">
 
-</head>
-
-<body>
    <?php 
       include "../php/db_connection.php";
       include "../php/create_table.php";
@@ -36,8 +33,10 @@
          echo 'Error connecting to database' . mysqli_connect_error();
       }
 
-
    ?>
+</head>
+
+<body>
 
    <a id="top" href=""></a>
 
