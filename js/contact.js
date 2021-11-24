@@ -11,7 +11,6 @@ function closeModal(e) {
    /* target --> element where event occured
    currentTarget --> element which the handle handler (addEventListener) is attached to */
    if (e.target === e.currentTarget) {
-      console.log("Close modal");
       modalOverlay.style.display = 'none';
       body.style.overflow = 'scroll';
    }
@@ -27,13 +26,6 @@ function disableBodyScroll() {
    } else {
       body.style.overflow = 'auto';
    }
-}
-
-function checkNullAndExecute(element, execution) {
-   // if element is NOT NULL, apply event listener to that element
-   if (element) {
-      
-   } 
 }
 
 disableBodyScroll();
