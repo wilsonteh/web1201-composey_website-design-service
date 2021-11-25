@@ -1,3 +1,7 @@
+#### DISCLAIMER:-
+
+> The project and its files are meant to be put on a web server in Heroku. Therefore, some/most of the functions will not work on the locally hosted files. The files are still included and should only be referred to as the source code of the project.
+
 
 # WEB1201 Website Building Project
 
